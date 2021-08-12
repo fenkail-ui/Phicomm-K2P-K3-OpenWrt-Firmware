@@ -21,6 +21,11 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 cat feeds.conf.default
 echo '====================Add feed source OK!===================='
 
+echo '添加cups软件源‘
+sed -i 'src-git cups https://github.com/Gr4ffy/lede-cups.git' feeds.conf.default
+
+echo '====================Add cups feed source OK!===================='
+
 echo '添加jerrykuku的argon-mod主题'
 rm -rf package/lean/luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
@@ -52,3 +57,5 @@ wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-
 #echo '替换K3的无线驱动为69027'
 #wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.69027 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 echo '====================Replace k3wireless firmware OK!===================='
+
+
