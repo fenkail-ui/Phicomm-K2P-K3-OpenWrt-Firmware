@@ -22,8 +22,8 @@ cat feeds.conf.default
 echo '====================Add feed source OK!===================='
 
 echo '添加cups软件源'
-sed -i '$a src-git cups https://github.com/Gr4ffy/lede-cups.git' feeds.conf.default
-sed -i 's/2.1.4/2.3.3/g' package/feeds/lede-cups/cups/Makefile
+sed -i '$a src-git cups https://github.com/gdck/luci-app-cupsd.git' feeds.conf.default
+sed -i 's/2.1.4/2.3.3/g' package/feeds/cups/cups/Makefile
 echo '====================Add cups feed source OK!===================='
 
 echo '添加jerrykuku的argon-mod主题'
