@@ -21,7 +21,7 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 cat feeds.conf.default
 echo '====================Add feed source OK!===================='
 
-echo '添加cups软件源‘
+echo '添加cups软件源'
 sed -i 'src-git cups https://github.com/Gr4ffy/lede-cups.git' feeds.conf.default
 
 echo '====================Add cups feed source OK!===================='
