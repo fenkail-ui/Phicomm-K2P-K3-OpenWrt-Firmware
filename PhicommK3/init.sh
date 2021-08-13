@@ -23,7 +23,7 @@ echo '====================Add feed source OK!===================='
 
 echo '添加cups软件源'
 sed -i '$a src-git cups https://github.com/fenkail-ui/lede-cups.git' feeds.conf.default
-#sed -i '$a src-git luci-app-cupsd https://github.com/gdck/luci-app-cupsd.git' feeds.conf.default
+sed -i '$a src-git luci-app-cupsd https://github.com/gdck/luci-app-cupsd.git' feeds.conf.default
 echo '====================Add cups feed source OK!===================='
 
 echo '添加jerrykuku的argon-mod主题'
